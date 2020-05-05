@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333;
+  color: #fff;
+  opacity: 0.8;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;
+  transition: 0.5s;
+}
+
+.navbar.top {
+  background: transparent;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: #e67e22 2px solid;
+}
+
+.navbar .logo {
+  font-weight: 400;
+  color: #fff;
+}
+
+/* Header */
+.hero {
+  background: url('../img/nordwood-themes-bJjsKbToY34-unsplash.jpg') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+.hero .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  padding: 0 20px;
+}
+
+.hero .content h1 {
+  font-size: 40px;
+  margin: 20px 0 30px;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero * {
+  z-index: 10;
+}
+
+/* Section Header */
+
+.section-header h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 50px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/* Section Services */
+
+.services {
+  padding-bottom: 10px;
+}
+
+.box h3 {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.box i {
+  background-color: #f4f4f4;
+  color: #e67e22;
+  padding: 1rem;
+  border: 3px solid #e9e6e6;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+/* Form */
+
+.callback-form {
+  padding: 20px 0;
+  width: 100%;
+}
+
+.callback-form .form-control {
+  margin-bottom: 15px;
+}
+
+.callback-form label {
+  display: block;
+}
+
+.callback-form input,
+.callback-form textarea {
+  width: 100%;
+  padding: 4px;
+  height: 40px;
+  border: #f5f5f5 1px solid;
+}
+
+.callback-form textarea {
+  height: 120px;
+}
+
+.callback-form input:focus,
+.callback-form textarea:focus {
+  outline-color: #e67e22;
+}
+
+.callback-form .btn {
+  padding: 12px 0;
+  margin-top: 20px;
+}
+
+/* Footer */
+.flex-footer {
+  color: rgb(221, 218, 218);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.flex-footer > * {
+  padding: 20px;
+}
+
+.flex-footer .social a {
+  padding: 20px;
+}
+
+.footer {
+  padding: 30px;
+  height: 250px;
+}
+
+.flex-footer a {
+  color: rgb(221, 218, 218);
+}
+
+.footer .social a:hover {
+  color: #e67e22;
+}
+
+.footer .social > * {
+  margin-right: 5px;
+}
+
+.footer .social {
+  display: flex;
+}
+
+.copyright p {
+  margin: 0;
+  text-align: center;
+  background: #444;
+  color: rgb(221, 218, 218);
+  padding: 10px;
+  font-size: 13px;
+}
+
+
+/* ----------------------------- */
+        /* Mobile Screen */
+/* ----------------------------- */
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 5px 18px;
+  }
+
+  .hero .content h1 {
+    font-size: 35px;
+  }
+
+  .btn {
+    padding: 7px 25px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-items .box {
+    flex: 100%;
+    width: 90%;
+  }
+
+  .flex-columns .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .footer .flex-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    height: 450px;
+  }
+
+  .footer .flex-footer > *:first-child {
+    border-bottom: #868686 dotted 1px;
+    width: 90%;
+  }
+
+  .footer .flex-footer > *:nth-child(2) {
+    border-bottom: #868686 dotted 1px;
+    width: 90%;
+  }
+
+  .footer .social > * {
+    margin-right: 0;
+  }
+}
