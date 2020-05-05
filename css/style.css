@@ -237,16 +237,34 @@ img {
 @media(max-width: 768px) {
   .navbar {
     flex-direction: column;
-    height: 120px;
+    height: 110px;
     padding: 20px;
+  }
+
+  .navbar .logo {
+    font-size: 30px;
+  }
+
+  .navbar ul {
+    padding: 10px 0 20px;
   }
 
   .navbar a {
     padding: 5px 18px;
   }
 
+  .hero {
+    height: 60vh;
+  }
+
   .hero .content h1 {
-    font-size: 35px;
+    font-size: 27px;
+    line-height: 1.5;
+    margin:50px 0 40px;
+  }
+
+  .section-header h2 {
+    font-size: 30px;
   }
 
   .btn {
@@ -265,6 +283,10 @@ img {
   .flex-columns .column {
     flex: 100%;
     max-width: 100%;
+  }
+
+  .flex-columns h2 {
+    font-size: 35px;
   }
 
   .footer .flex-footer {
