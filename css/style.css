@@ -258,7 +258,7 @@ img {
   }
 
   .hero .content h1 {
-    font-size: 27px;
+    font-size: 25px;
     line-height: 1.5;
     margin:50px 0 40px;
   }
@@ -268,7 +268,8 @@ img {
   }
 
   .btn {
-    padding: 7px 25px;
+    font: 15px;
+    padding: 5px 23px;
   }
 
   .flex-items {
