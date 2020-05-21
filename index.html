@@ -1,155 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Pomade Consulting Limited | Welcome</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/fontawesome.min.css">
-  <link rel="stylesheet" href="css/utilities.css">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Pomade Consulting Limited</title>
-</head>
-
-<body id="home">
-  <header class="hero">
-    <div id="navbar" class="navbar top">
-      <h1 class="logo">PCL</h1>
-      <nav>
+  <body id="home">
+    <header class="hero">
+      <nav id="navbar" class="navbar top">
+        <img src="img/pomade-logo.png" alt="" />
         <ul>
-          <li><a href="#home">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <div class="container">
+        <div class="content">
+          <h1>STRATEGIC IT CONSULTING SERVICES</h1>
+          <a href="#services" class="btn"
+            ><i class="fas fa-chevron-right"></i> Show Me More</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Services: Icon -->
+      <section id="services" class="services bg-light">
+        <header class="section-header">
+          <h2>WHAT WE DO</h2>
+          <p>
+            We provide full cycle integration, implementation and training for
+            our clients complete IT needs and expectations. We encourage you to
+            explore our services.
+          </p>
+        </header>
+        <div class="flex-items">
+          <div class="box">
+            <i class="fab fa-buffer fa-2x"></i>
+            <div>
+              <h3>Brand Development</h3>
+              <p>All aspects of Brand Development from Logo to stationary.</p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fas fa-microchip fa-2x"></i>
+            <div>
+              <h3>Hardware/Network Services</h3>
+              <p>
+                We give you a top notch supply of data and information by
+                linking group of networks.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fas fa-code fa-2x"></i>
+            <div>
+              <h3>Web Design & Development</h3>
+              <p>
+                We create a design that meets with the desire of our client
+                while drawing on their own experience in web designing and
+                optimization.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex-items">
+          <div class="box">
+            <i class="fas fa-tasks fa-2x"></i>
+            <div>
+              <h3>Management Consulting</h3>
+              <p>
+                We help to build your business by developing plans for
+                improvement, process analysis, operational improvement and
+                strategy development.
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fas fa-briefcase fa-2x"></i>
+            <div>
+              <h3>Information Technology Consulting</h3>
+              <p>We provide solutions to solve your IT problems.</p>
+            </div>
+          </div>
+          <div class="box">
+            <i class="fas fa-laptop-code fa-2x"></i>
+            <div>
+              <h3>Software Solutions</h3>
+              <p>
+                Our team of talented specialists are trained to develop
+                oustanding softwares unique to your company
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact flex-columns">
+        <div class="row">
+          <div class="column">
+            <div class="column-1">
+              <img src="img/photo-of-woman-using-laptop-3891135.jpg" alt="" />
+            </div>
+          </div>
+          <div class="column">
+            <div class="column-2">
+              <h2>Talk To Us</h2>
+              <form class="callback-form">
+                <div class="form-control">
+                  <label for="name"></label>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="bg-light"
+                    placeholder="Enter name"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="email"></label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="bg-light"
+                    placeholder="Enter email"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="message"></label>
+                  <textarea
+                    type="text"
+                    name="message"
+                    id="message"
+                    class="bg-light"
+                    placeholder="Enter message"
+                  ></textarea>
+                </div>
+                <input type="submit" value="Send" id="submit" class="btn" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="contact" class="footer bg-dark">
+      <div class="flex-footer">
+        <div>
+          <p><i class="fas fa-phone-alt"></i>+(234) 813 469 6483</p>
+          <p></p>
+          <p><i class="fas fa-phone-alt"></i>+(234) 814 617 2428</p>
+          <p><i class="fas fa-envelope"></i>pomadeconsulting@gmail.com</p>
+        </div>
+        <div>
+          <p><b>Head office:</b></p>
+          <p>Suite 1, Inwande Plaza, No 15 Jere Street Garki II, Abuja.</p>
+        </div>
+        <div class="social">
+          <a
+            href="https://www.facebook.com/pages/category/Science--Technology---Engineering/Pomade-consult-limited-110474883979757/"
+            target="_blank"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <a href="https://mobile.twitter.com/ConsultPomade" target="_blank"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/pomade-consult-limited-16b8381a6"
+            target="_blank"
+            ><i class="fab fa-linkedin fa-2x"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p>
+        Copyright &copy; 2020 - Pomade Consulting Ltd. |
+        <a href="terms.html">Terms & Conditions</a>
+      </p>
     </div>
 
-    <div class="content">
-      <h1>STRATEGIC IT CONSULTING SERVICES</h1>
-      <a href="#services" class="btn"><i class="fas fa-chevron-right"></i> Show Me More</a>
-    </div>
-  </header>
+    <!-- JQuery CDN --->
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
 
-  <main>
-    <!-- Services: Icon -->
-    <section id="services" class="services bg-light">
-      <header class="section-header">
-        <h2>WHAT WE DO</h2>
-        <p>We provide full cycle integration, implementation and training for our clients complete IT needs and
-          expectations. We encourage you to explore our services.</p>
-      </header>
-      <div class="flex-items">
-        <div class="box">
-          <i class="fab fa-buffer fa-2x"></i>
-          <div>
-            <h3>Brand Development</h3>
-            <p>All aspects of Brand Development from Logo to stationery.</p>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-microchip fa-2x"></i>
-          <div>
-            <h3>Hardware/Network Services</h3>
-            <p>We give you a top notch supply of data and information by linking group of networks.</p>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-code fa-2x"></i>
-          <div>
-            <h3>Web Design & Development</h3>
-            <p>We create a design that meets with the desire of our client while drawing on their own experience in web
-              designing and optimization.</p>
-          </div>
-        </div>
-      </div>
-      <div class="flex-items">
-        <div class="box">
-          <i class="fas fa-tasks fa-2x"></i>
-          <div>
-            <h3>Management Consulting</h3>
-            <p>We help to build your business by developing plans for improvement, process analysis, operational
-              improvement and strategy development.</p>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-briefcase fa-2x"></i>
-          <div>
-            <h3>Information Technology Consulting</h3>
-            <p>We provide solutions to solve your IT problems.</p>
-          </div>
-        </div>
-        <div class="box">
-          <i class="fas fa-laptop-code fa-2x"></i>
-          <div>
-            <h3>Software Solutions</h3>
-            <p>Our team of talented specialists are trained to develop oustanding softwares unique to your company</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact flex-columns">
-      <div class="row">
-        <div class="column">
-          <div class="column-1">
-            <img src="img/photo-of-woman-using-laptop-3891135.jpg" alt="">
-          </div>
-        </div>
-        <div class="column">
-          <div class="column-2">
-            <h2>Talk To Us</h2>
-            <form class="callback-form">
-              <div class="form-control">
-                <label for="name"></label>
-                <input type="text" name="name" id="name" class="bg-light" placeholder="Enter name">
-              </div>
-              <div class="form-control">
-                <label for="email"></label>
-                <input type="email" name="email" id="email" class="bg-light" placeholder="Enter email">
-              </div>
-              <div class="form-control">
-                <label for="message"></label>
-                <textarea type="text" name="message" id="message" class="bg-light"
-                  placeholder="Enter message"></textarea>
-              </div>
-              <input type="submit" value="Send" id="submit" class="btn">
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer id="contact" class="footer bg-dark">
-    <div class="flex-footer">
-      <div>
-        <p>Phone: <a href="tel:+234 817 202 3085">+234 817 202 3085</a></p>
-        <p>Email: <a href="pomadeconsulting@gmail.com">pomadeconsulting@gmail.com</a></p>
-      </div>
-      <div>
-        <p><b>Head office:</b></p>
-        <p>Suite 1, Inwande Plaza, No 15 Jere Street Garki II, Abuja.</p>
-      </div>
-      <div class="social">
-        <a href="https://www.facebook.com/pages/category/Science--Technology---Engineering/Pomade-consult-limited-110474883979757/"
-          target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
-        <a href="https://mobile.twitter.com/ConsultPomade" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
-        <a href="https://www.linkedin.com/in/pomade-consult-limited-16b8381a6" target="_blank"><i
-            class="fab fa-linkedin fa-2x"></i></a>
-      </div>
-    </div>
-  </footer>
-  <div class="copyright">
-    <p>Copyright &copy; 2020 - Pomade Consulting Ltd.</p>
-  </div>
-
-  <!-- JQuery CDN --->
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-
-  <!-- Local JS File ----->
-  <script src="javascript/main.js"></script>
-
-</body>
-
+    <!-- Local JS File ----->
+    <script src="javascript/main.js"></script>
+  </body>
 </html>
